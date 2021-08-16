@@ -1,0 +1,72 @@
+:root {
+
+  /* Shades of B&W */
+  --black: #151515;
+  --dark-gray-dark: #333333;
+  --dark-gray: #4F4F4F;
+  --dark-gray-light: #828282;
+  --light-gray-dark: #BDBDBD;
+  --light-gray: #E0E0E0;
+  --light-gray-light: #F2F2F2;
+  --white: #F8F8F8;
+  --pure-white: #FFFFFF;
+
+
+  /* Colors https://color.adobe.com/pl/Royalty-color-theme-7499791 */
+  --color-primary-dark: #460259;
+  --color-primary: #5A0273;
+  --color-primary-light: #672C75;
+
+  --color-accent-dark: #0f745d;
+  --color-accent-light: #27d2ab;
+
+
+  /* Fonts */
+  --font-primary: 'Roboto', sans-serif;
+  --font-secondary: 'Poppins', sans-serif;
+  --font-accent: 'Raleway', sans-serif;
+
+}
+
+/* Main Style Configuration */
+
+* {
+  box-sizing: border-box;
+}
+
+p, b, i, ul, li, span, small, em, {
+  color: var(--black);
+}
+
+h1 {
+  font-family: var(--font-secondary);
+  color: var(--dark-gray);
+}
+
+h2, h3, h4, h5, h6 {
+  font-family: var(--font-secondary);
+  color: var(--dark-gray-dark);
+}
+
+.dark-theme p, .dark-theme b, .dark-theme i, .dark-theme ul, .dark-theme li, .dark-theme span, .dark-theme small, .dark-theme em {
+  color: var(--light-gray-dark);
+}
+
+a {
+  color: var(--color-accent-dark);
+  transition: color 0.21s ease-out;
+}
+
+a:hover {
+  color: var(--color-accent-light);
+}
+
+.dark-theme h1 {
+  font-family: var(--font-secondary);
+  color: var(--white);
+}
+
+.dark-theme h2, .dark-theme h3, .dark-theme h4, .dark-theme h5, .dark-theme h6 {
+  font-family: var(--font-secondary);
+  color: var(--light-gray-light);
+}
